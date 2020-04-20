@@ -3,67 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Girassol&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style/estilos.css">
     <title>Eduplay</title>
 </head>
 <body>
-    <header>
-    <nav>
-        <ol>
-            <li>
-                <a href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-                <a href="#exp">Experiencia</a>
-            </li>
-            <li>
-                <a href="#contacto">trabajemos juntos</a>
-            </li>
-        </ol>
-    </nav>
+    <header class="header">
+    <div>
+        <nav class="menu">
+            <ol>
+                <li>
+                    <a class="link" href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a class="link" href="#exp">Experiencia</a>
+                </li>
+                <li>
+                    <a class="link" href="#contacto">trabajemos juntos</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
     </header>
-    <section >
+    <section class="hero">
         <h1>
-            hola soy <strong>Gean Solano</strong> <br>
-            ahora me encuentro creando un pagina web  <br> por que amo la <strong>programacion</strong>
+            hola! soy <strong>Gean Solano</strong> <br>
+            desarrollador javascript<br><strong>con pasion por la programación</strong>
         </h1>
-        <img src="img/cherry.JPG" width="500px" height="300px" alt="" >
+        <!-- 
+            <img src="img/cherry.JPG" width="500px" height="300px" alt="" >
+
+         -->
      </section>
-    <section id="portafolio">
-        <h2>Portafolio pryectos destacados</h2>
-        <article>
-            <h3>
-                Platzi video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 18/04/20</small></p>
-            <p><small><strong>puedes verlo en:</strong>www.platzi.com</small></p>
-            <p>Esto es un texto explicativo acerca de lo que conciste nuestro proyecto.
-                etiquetas de cabecera (head)
-                Doctype:indica al navegador el tipo de documento que se esta mostrando
-                head:es la cabecera del documento y bueno ya no voy a escribir nada mas por que o si no no voy  a terminar nunca de escribir esto por ende no voy a terminar la pagina web de eeste curos y peor hacer la pagin web del <strong>cherry academia</strong>
-            </p>    
+    <section class="portfolio" id="portafolio">
+        <h2>Portafolio proyectos destacados</h2>
+        <article class="project">
+            <div class="project-details">
+
+                <h3 class="project-tittle">  Platzi video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 18/04/20</small></p>
+                <p class="project-url"><small><strong>puedes verlo en:</strong>www.platzi.com</small></p>
+                <p class="project-description">Esto es un texto explicativo acerca de lo que conciste nuestro proyecto.
+                    etiquetas de cabecera (head)
+                    Doctype:indica al navegador el tipo de documento que se esta mostrando
+                    head:es la cabecera del documento y bueno ya no voy a escribir nada mas por que o si no no voy  a terminar nunca de escribir esto por ende no voy a terminar la pagina web de eeste curos y peor hacer la pagin web del <strong>cherry academia</strong>
+                </p>    
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="img/crepper.JPG" width="300px" height="300px" alt="" srcset="">
+            </figure>
         </article>
     </section>
 
     <section id="exp">
         <h2>Algo mas sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="img/crepper.JPG" width="300px" height="300px" alt="">
+        <article class=""event>
+            <figure class="event-imageContainer">
+                <img class="event-image" src="img/crepper.JPG" width="300px" height="300px" alt="">
             </figure>
-            <h3>Platziconf 2017</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, excepturi! Non totam expedita sequi laudantium dolorum, quas, corrupti omnis soluta, ullam consequuntur facilis? Tempore aspernatur adipisci voluptatem odit, temporibus beatae.</p>
-            <a href="https://youtu.be/_NXrTujMP50" target="_blank">ver exposicion</a>
+            <h3 class="even-title">Platziconf 2017</h3>
+            <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, excepturi! Non totam expedita sequi laudantium dolorum, quas, corrupti omnis soluta, ullam consequuntur facilis? Tempore aspernatur adipisci voluptatem odit, temporibus beatae.</p>
+            <a class="event-url" href="https://youtu.be/_NXrTujMP50" target="_blank">ver exposicion</a>
         </article>
     </section>
 
-    <section id="contacto">
-        <form action="/suscripcion/">
+    <section class="contacto" id="contacto">
+        <form action="/suscripcion/" class="form-email">
             <h3>¿Creamos algo juntos?</h3>
         <input type="text" placeholder="Dejame tu email" id="email" >
         <input type="submit" value="enviar">
         </form>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
 </body>
 </html>
