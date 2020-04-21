@@ -15,13 +15,27 @@ h6{
 }
 .hero{
     height: 300px;
+    background-image: url(../img/g.png);
+    background-color: #1b2127;
+    background-size: 400px 300px;
+    background-repeat:no-repeat;
+    background-position-x: right;
 }
 h1 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2;
+    color:white;
     
 }
+h1 strong{
+    color:#026fff;
+}
+.project{
+    border:1px solid gray;
+    border-radius:10px;
+}
+
 
 .project-details{
     width: 500px;
@@ -29,3 +43,16 @@ h1 {
 .project-imageContainer{
     width: 500px;
 }
+.header{
+    background-color:#1b2127;
+    color:white;
+}
+.header a{
+    color:white;
+    text-decoration:none;
+}
+/* colores------------------------------------------------------>
+gris oscuro:#1b2127
+gris claro: #626262
+background-gris: #1b2127
+*/
