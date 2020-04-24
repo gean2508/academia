@@ -40,27 +40,57 @@ h1 {
 h1 strong{
     color:#026fff;
 }
+h2{
+    color:#026fff;
+    text-transform:uppercase;
+    font-family: 'Girassol', cursive;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom:40px;
+
+}
+.project-course,
+.project-date,
+.project-url{
+    margin:10px 0;
+}
+.project-description{
+    font-size: 20px;
+}
+
 .portfolio{
     background-color: #fafafa;
+    padding:20px;
+    padding-top: 0;
+}
+.project strong{
+    font-family: 'Girassol', cursive;
 }
 .project{
     border:1px solid gray;
     border-radius:10px;
-    margin-bottom:15px;
-    margin: 10px;
+    margin-bottom:0;
+    
     padding:20px;
     background-color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
-
+.project-tittle{
+    font-size:30px;
+    margin-bottom:10px;
+    margin-top:o;
+}
 .project-details{
     width: 500px;
     
    
 }
 .project-imageContainer{
-    width: 500px;
+    
     display:inline-block;
 }
 
@@ -91,6 +121,99 @@ h1 strong{
     align-items: center;
     padding:0 10px;
 }
+
+.h-2{
+    padding: 20px;
+}
+.event-list{
+    display:flex;
+}
+.event{
+    
+    margin:10px;
+    width: 480px;
+    border-radius:10px;
+    overflow:hidden;
+    flex-shrink: 0;
+    background: #f4fbff;
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit:initial;
+}
+.event-details{
+    margin:20px 40px;
+    margin-top:-40px;
+    background-color:white;
+    margin-top:-40px;
+    position: relative;
+    padding:20px;
+    text-align:center;
+}
+.event-description{
+    text-align: left;
+}
+.event-url{
+    border:1px solid ;
+    text-decoration:none;
+    padding:5px 20px;
+    color: #056fff;
+    border-radius:5px;
+}
+.contact{
+    background-color:#056fff;
+    color:white;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.form-email button{
+    color: white;
+    display:block;
+    background:transparent;
+    padding:5px 0px;
+    border-radius:5px;
+    width:100px;
+    margin-top:10px;
+   
+}
+.social{
+    
+    
+}
+.social-link{
+    width:50px;
+    height:50px;
+    margin:0 10px;
+    display:inline-block;
+    background-size:50px 50px;
+}
+.social-link.github{
+    background-image: url(../img/github.png);
+    
+    
+}
+.social-link.instagram{
+    background-image: url(../img/insta.png);
+    
+    
+}
+.form-email input{
+    border-color:gray;
+    border-style:solid;
+    border-radius:5px;
+    padding:10px 20px 10px 25px;
+    background-image: url('../img/email.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+
+
 .footer{
     color:white;
     background:#1b2127;
@@ -104,9 +227,5 @@ h1 strong{
 }
 .footer a{
     color:white;
+    padding-right:10px;
 }
-/* colores------------------------------------------------------>
-gris oscuro:#1b2127
-gris claro: #626262
-background-gris: #1b2127
-*/
