@@ -21,14 +21,21 @@ figure{
 }
 .hero{
     height: 300px;
-    background-image: url(../img/g.png);
+    
     background-color: #1b2127;
-    background-size: 400px 320px;
-    background-repeat:no-repeat;
+    
+    
     background-position-x: right;
     display:flex;
     align-items: center;
+    justify-content: space-between;
 }
+
+.hero-image{
+    padding-top:5px;
+    height: 304px;
+}
+
 h1 {
     font-size: 40px;
     line-height: 1.5;
@@ -69,7 +76,7 @@ h2{
 .project{
     border:1px solid gray;
     border-radius:10px;
-    margin-bottom:0;
+    margin-bottom:15px;
     
     padding:20px;
     background-color:white;
@@ -124,9 +131,11 @@ h2{
 
 .h-2{
     padding: 20px;
+    margin-top: 0;
 }
 .event-list{
     display:flex;
+    flex-wrap:wrap;
 }
 .event{
     
@@ -212,8 +221,6 @@ h2{
     background-position-x: 5px;
 }
 
-
-
 .footer{
     color:white;
     background:#1b2127;
@@ -228,4 +235,15 @@ h2{
 .footer a{
     color:white;
     padding-right:10px;
+}
+
+.container{
+    
+    width:1000px;
+    margin:0 auto;
+    height:inherit;
+    display:inherit;
+    justify-content:inherit;
+    align-items: inherit;
+    flex-wrap:inherit;
 }
